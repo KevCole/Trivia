@@ -1,15 +1,143 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
  <head>
    <title> DC Trivia </title>
    <link rel="stylesheet" type="text/css" href="mystyle.css">
  </head>
  <body>
-   <h1>DC Trivia</h1>
-   <h2>Question 1</h2>
-    <div>
-    	<div>
+   <h2>Washington DC Trivia </h2>
+   <h2 id="Timer">Timer</h2>
+   <h2 id ='Score'> Score </h2>
+    <div class ="container">
+    	<div class="Question">
+    		<h2>Question 1</h2>
+    		<p>Which President made the White House wheelchair accesible?</p>
+    			<div class="selections">
+    				<button id='ted_c'type="button">Theodore Roosevelt </button>
+    				<button id='grover_C'type="button"> Grover Cleveland </button>
+    				<button id="franklin_R" type="button"> Frankin Roosevelt</button>
+    				<button id='john_k'"button"> John Kennedy</button>
+    			</div>
+    	</div>
+    </div>
+   
+   <div class ="container">
+    	<div class="Question">
+    		<h2>Question 2</h2>
+    		<p>Which DC neighborhood predates the city?<p>
+    			<div class="selections">
+    				<button id='georgeTown' type="button">Dupont Circle</button>
+    				<button id='dupontCircle' type="button"> Georgrtown</button>
+    				<button id='adamsMorgan' type="button">Adams Morgan</button>
+    				<button id='columbiaHeights' type="button">Columbia Heights</button>
+    			</div>
+    	</div>
+    </div>
 
+   <div class ="container">
+    	<div class="Question">
+    		<h2>Question 3</h2>
+    		<p>Which organization doesn't have it's headquarters in Washington DC?<p>
+    			<div class="selections">
+    				<button id='cia' type="button">NASA</button>
+    				<button id='fbi' type="button">FBI</button>
+    				<button id='irs' type="button">IRS</button>
+    				<button id='nasa' type="button">CIA</button>
+    			</div>
+    	</div>
+    </div>
+
+   <div class ="container">
+    	<div class="Question">
+    		<h2>Question 4</h2>
+    		<p>Which of the follwing is depicted in Washington National Cathedral?<p>
+    			<div class="selections">
+    				<button id='mickeyMouse' type="button">Mickey Mouse</button>
+    				<button id='darthVader' type="button">Adbominable Snowman</button>
+    				<button id='snowMan' type="button">Darth Vader</button>
+    				<button id='scar' type="button">Scar</button>
+    			</div>
+    	</div>
+    </div>
+
+   <div class ="container">
+    	<div class="Question">
+    		<h2>Question 5</h2>
+    		<p>What was the original name of Washington DC?</p>
+    			<div class="selections">
+    				<button id='commonsCity' type="button">District Commons City</button>
+    				<button id='washingtonCity' type="button">Washington City</button>
+    				<button id='capCity' type="button">Capitol City</button>
+    				<button id='fedCity' type="button">Federal City</button>
+    			</div>
+    	</div>
+    </div>
+
+   <div class ="container">
+    	<div class="Question">
+    		<h2>Question 6</h2>
+    		<p>At the center of the Washington Monument arises a 600ft Egyptian Statue called an Obelisk.
+    			Obelisks were believed to act as magical protection to monuments.<br> Obelisks symbolized the stability and the creative force of which Egyptian "Sun" God?
+    		</p>
+    			<div class="selections">
+    				<button id='ra' type="button">Ra</button>
+    				<button id='anti' type="button">Anti</button>
+    				<button id='nemty' type="button">Nemty</button>
+    				<button id='shesmu' type="button">Shesmu</button>
+    			</div>
+    	</div>
+    </div>
+
+   <div class ="container">
+    	<div class="Question"> 
+    		<h2>Question 7</h2>
+    		<p>Which one of these people designed Washington D.C?</p>
+    			<div class="selections">
+    				<button id='lEnfant' type="button">George Washington</button>
+    				<button id='georgeW' type="button">Charles L'Enfant </button>
+    				<button id='benjamin' type="button"> Benjamin Franklin</button>
+    				<button id='olmstead' type="button"> Fredrick Law Olmsted</button>
+    			</div>
+    	</div>
+    </div>
+
+   <div class ="container">
+    	<div class="Question">
+    		<h2>Question 8</h2>
+    		<p>Which film is not set in Washington?</p>
+    			<div class="selections">
+    				<button id='strangers' type="button">Strangers on a Train</button>
+    				<button id='bruce' type="button">Traffic</button>
+    				<button id='traffic' type="button">Bruce Almighty</button>
+    				<button id='exorcist' type="button">The Exorcist</button>
+    			</div>
+
+    	</div>
+    </div>
+
+   <div class ="container">
+    	<div class="Question">
+    		<h2>Question 9</h2>
+    		<p>Approximately how many people live in D.C.?</p>
+    			<div class="selections">
+    				<button id='one' type="button">One million</button>
+    				<button id='fiveHundred' type="button">500,000</button>
+    				<button id='onePointFive' type="button"> 1.5 million</button>
+    				<button id='twoMillion' type="button">Two million</button>
+    			</div>
+    	</div>
+    </div>
+
+   <div class ="container">
+    	<div class="Question">
+    		<h2>Question 10</h2>
+    		<p>Where does D.C. rank in terms of traffic?</p>
+    			<div class="selections">
+    				<button id='first' type="button">First</button>
+    				<button id='second' type="button">Second</button>
+    				<button id='third' type="button"> Third</button>
+    				<button id='fifth' type="button">Fifth</button>
+    			</div>
     	</div>
     </div>
    
@@ -40,9 +168,7 @@
 
 
 
-
-
-
- 	<script src="myscripts.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="myscript.js"></script> 
  </body>
 </html>
