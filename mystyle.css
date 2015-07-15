@@ -1,9 +1,29 @@
 
+body{
+	font-family: 'Questrial', sans-serif;
+}
 .container{
 	width: 80%;
 	padding: 50px;
+	margin-bottom: 20px;
 	margin: 0 auto;
+	border:dotted;
+	border-radius:20px;
+	background: #223164;
 }
+
+#triviaTitle{
+	font-family: 'Playfair Display', serif;
+
+	
+
+}
+
+div div h2{
+	color:white;
+}
+
+
 
 button{
 	margin: 0 auto;
@@ -15,30 +35,42 @@ p{
 	width: 100%;
 	margin:0 auto;
 	padding: 20px;
-	border:dotted;
+	border:solid;
 	text-align:center;
 }
 
-
+.Question{
+	background: #E6E6E6;
+	max-width: 60%;
+	background:#F2F0F0;
+	border-radius: 5px;
+}
 
 .selections {
-
 	margin:0 auto;
-
 }
 
 label  {
 	margin: 0 auto;
+	margin-bottom:20px;
 	display: block;
 	text-align: center;
 	padding: 10px 20px;
 	font-weight: bold;
-	background-color: #016699;
+	border:solid;
+	border-color:#3498db;
 	border-radius: 5px;
 	cursor: pointer;
-	color: white;
+	color: #3498db;
+	width: 50%;
+	background: white;
 	
+	}
 
+label:hover{
+	background: #4D4DDB;
+	background: linear-gradient(#2954D6,#4C74E0);
+	color: white;
 }
 
 .choose {
@@ -58,5 +90,23 @@ span.wrong {
 
 .answer_menu p {
 	display: none;
+	color: white;
 }
 
+#Score{
+	position:fixed;
+	bottom:100px;
+	right: 130px;
+	background:#250599;
+	background: linear-gradient(#250599,#2904B3);
+	color:white;
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+
+div div div p {
+	max-width: 60%;
+	border:solid;
+	border-color: #3498db;
+	border-radius: 10px;
+}

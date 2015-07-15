@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
  <head>
+<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
    <title> DC Trivia </title>
    <link rel="stylesheet" type="text/css" href="mystyle.css">
-   <link rel="shortcut icon" href="your_image_path_and_name.ico" />
  </head>
  <body>
-   <h2>Washington DC Trivia </h2>
-   <h2 id="Timer">Timer</h2>
-   <h2 id ='Score'> Score: </h2>
+   <h2 id='triviaTitle'>Washington DC Trivia </h2>
+   <h2 id ='Score'>Correct Answers:</h2>
 
     <div class ="container">
-    	<div class="Question">
+    	<div>
     		<h2>Question 1</h2>
-    		<p>Which President made the White House wheelchair accesible?</p>
+    		<p class="Question">Which President made the White House wheelchair accesible?</p>
     			<div class="answer_menu">
     				<label><input class="choose" id='franklinR' type="radio">Frankin Roosevelt</label>
     					<p id='QuesOneAns'><span class='right'>Correct !! </span>The original builders of the White House didn't consider the possibility of a handicapped president. The White House didn't become wheelchair accessible until Franklin Delano Roosevelt took office in 1933. President Roosevelt suffered paralysis due to polio, so the White House was remodeled to accommodate his wheelchair. Franklin Roosevelt also added a heated indoor swimming pool to help with his therapy.</p>
@@ -31,9 +31,9 @@
     </div>
    
    <div class ="container">
-    	<div class="Question">
+    	<div>
     		<h2>Question 2</h2>
-    		<p>Which DC neighborhood predates the city?</p>
+    		<p class="Question">Which DC neighborhood predates the city?</p>
     			<div class="answer_menu">
     				<label><input class="choose" id='dupontCircle' type="radio" value='a'>Dupont Circle</label>
     					<p id="QuesTwoWrongA"><span class='wrong'>Wrong!!</span> Founded in 1751, Georgetown grew into one of the largest cities in Maryland before it became part of the District of Columbia in 1871. Today the upscale neighborhood is home to shops resturants, and cobblestone streets lined with beautiful brownstones</p>
@@ -51,9 +51,9 @@
     </div>
 
    <div class ="container">
-    	<div class="Question">
+    	<div>
     		<h2>Question 3</h2>
-    		<p>Which organization doesn't have it's headquarters in Washington DC?</p>
+    		<p class="Question">Which organization doesn't have it's headquarters in Washington DC?</p>
     			<div class="answer_menu">
     				<label><input class="choose" id='cia' type="radio">CIA</label>
     					<p id='QuesThreeAns'><span class='right'> Correct!! </span> The Federal Bureau of investigation(FBI) and the Internal Revenue Service(IRS) are both headquartered in the District, but the Central Intelligence Agency (CIA) is based in the Langley neighborhood of nearby McLean,Virginia.</p>
@@ -73,15 +73,15 @@
      </div>
 
    <div class ="container">
-    	<div class="Question">
+    	<div>
     		<h2>Question 4</h2>
-    		<p>Which of the follwing is depicted in Washington National Cathedral?</p>
+    		<p class="Question">Which of the follwing is depicted in Washington National Cathedral?</p>
     			<div class="answer_menu">
     				<label><input class="choose" id='mickeyMouse' type="radio">Mickey Mouse</label>
     					<p id='QuesFourWrongA'><span class='wrong'>Wrong!!</span> In 1980, the National Cathedral and National Geographic World magazine held a contest asking children to suggest new gargoyle designs for the building A nebraska boy suggested the Star Wars villain, and it and several other suggestions were added to the Cathedral</p>
 
     				<label><input class="choose" id='darthVader' type="radio" >Darth Vader</label>
-    					<p id='QuesFourAns'><span class='correct'>Correct!!</span> In 1980, the National Cathedral and National Geographic World magazine held a contest asking children to suggest new gargoyle designs for the building A nebraska boy suggested the Star Wars villain, and it and several other suggestions were added to the Cathedral</p>
+    					<p id='QuesFourAns'><span class='right'> Correct!! </span> In 1980, the National Cathedral and National Geographic World magazine held a contest asking children to suggest new gargoyle designs for the building A nebraska boy suggested the Star Wars villain, and it and several other suggestions were added to the Cathedral</p>
 
     				<label><input class="choose" id='snowMan' type="radio">Adbominable Snowman</label>
     					<p id='QuesFourWrongC'><span class='wrong'>Wrong!!</span> In 1980, the National Cathedral and National Geographic World magazine held a contest asking children to suggest new gargoyle designs for the building A nebraska boy suggested the Star Wars villain, and it and several other suggestions were added to the Cathedral</p>
@@ -93,9 +93,9 @@
     </div>
 
    <div class ="container">
-    	<div class="Question">
+    	<div>
     		<h2>Question 5</h2>
-    		<p>What was the original name of Washington DC?</p>
+    		<p class="Question">What was the original name of Washington DC?</p>
     			<div class="answer_menu">
     				<label><input class="choose" id='commonsCity' type="radio" value='a'>District Commons</label>
     				<p id='QuesFiveWrongA'><span class='wrong'>Wrong!!</span> On September 9, 1791, the three commissioners overseeing the capital's construction named the city in honor of President Washington.</p>
@@ -113,9 +113,9 @@
     </div>
 
    <div class="container">
-    	<div class="Question">
+    	<div>
     		<h2>Question 6</h2>
-    		<p>At the center of the Washington Monument arises a 600ft Egyptian Statue called an Obelisk.
+    		<p class="Question">At the center of the Washington Monument arises a 600ft Egyptian Statue called an Obelisk.
     			Obelisks were believed to act as magical protection to monuments.<br> Obelisks symbolized the stability and the creative force of which Egyptian "Sun" God?</p>
 
     			<div class="answer_menu">
@@ -136,9 +136,9 @@
     </div> 
 
    <div class ="container">
-    	<div class="Question"> 
+    	<div> 
     		<h2>Question 7</h2>
-    		<p>Which one of these people designed Washington D.C?</p>
+    		<p class="Question">Which one of these people designed Washington D.C?</p>
     			<div class="answer_menu">
     				<label><input class="choose" id='lEnfant' type="radio" value='a'>Charles L'Enfant</label>
     					<p id='QuesSevAnsA'> <span class='right'>Correct!!</span> Pierre Charles L'Enfant, a French-born American patriot, was the primary architect of the city of Washington, D.C.</p>
@@ -156,9 +156,9 @@
     </div>
 
    <div class ="container">
-    	<div class="Question">
+    	<div>
     		<h2>Question 8</h2>
-    		<p>Which film is not set in Washington?</p>
+    		<p class="Question">Which film is not set in Washington?</p>
     			<div class="answer_menu">
     				<label><input class="choose" id='strangers' type="radio" value='a'>Strangers on a Train</label>
     					<p id='QuesEightWrongA'><span class='wrong'>Wrong!!</span> All of these movies are set in DC except for "Bruce Almighty which was filmed in Buffalo,NY</p>
@@ -176,9 +176,9 @@
     </div>
 
    <div class ="container">
-    	<div class="Question">
+    	<div>
     		<h2>Question 9</h2>
-    		<p>Approximately how many people live in D.C.?</p>
+    		<p class="Question">Approximately how many people live in D.C.?</p>
     			<div class="answer_menu">
     				<label><input class="choose" id='one' type="radio" value='a'>One million</label>
     				<p id='QuesNineWrongA'><span class='wrong'>Wrong!!</span> More than half a million people live in the city, which is considerable given its size.</p>
@@ -196,14 +196,14 @@
     </div>
 
    <div class ="container">
-    	<div class="Question">
+    	<div>
     		<h2>Question 10</h2>
-    		<p>Where does D.C. rank in terms of traffic?</p>
+    		<p class="Question">Where does D.C. rank in terms of traffic?</p>
     			<div class="answer_menu">
     				<label><input class="choose" id='first' type="radio">First</label>
     				<p id='QuesTenWrongA'><span class='wrong'>Wrong!!</span> Washington D.C. is third, behind Los Angeles and San Francisco, among the worst traffic-ridden cities in the U.S. Add to that the difficulties navigating the city and you'll understand why most residents prefer the light-rail system. </p>
 
-    				<label><input class="choose" id='second' type="radio"> Second></label>
+    				<label><input class="choose" id='second' type="radio"> Second</label>
     				<p id='QuesTenWrongB'><span class='wrong'>Wrong!!</span> Washington D.C. is third, behind Los Angeles and San Francisco, among the worst traffic-ridden cities in the U.S. Add to that the difficulties navigating the city and you'll understand why most residents prefer the light-rail system. </p>
 
     				<label><input class="choose" id='third' type="radio"> Third</label>

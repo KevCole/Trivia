@@ -1,4 +1,5 @@
 var score = 0;
+var name =prompt("What is your name?");
 
 
 //Question 1
@@ -7,7 +8,7 @@ var score = 0;
 		$('#franklinR').on('click', function(){//click one brings on an alert saying you got it right as well as one point added to score
 		$("#QuesOneAns").slideToggle();
 		score++;
-		$("#Score").html("Score:" + score);
+		$("#Score").html("Correct Answers:" + score + " of 10");
 		});
 
 
@@ -32,7 +33,7 @@ var score = 0;
 		$('#georgeTown').on('click', function(){
 				$("#QuesTwoAns").slideToggle();
 				score++;
-			$("#Score").html("Score:" + score);
+			$("#Score").html(name +" 's "+ "Correct Answers:" + score + " of 10");
 		});
 
 		$('#dupontCircle').on('click', function(){
@@ -55,7 +56,7 @@ var score = 0;
 		$('#cia').on('click', function(){
 			$("#QuesThreeAns").slideToggle();
 				score++;
-			$("#Score").html("Score:" + score);
+			$("#Score").html("Correct Answers:" + score + " of 10");
 		});
 
 			$('#fbi').on('click', function(){
@@ -77,7 +78,7 @@ var score = 0;
 		$('#darthVader').on('click', function(){
 			$("#QuesFourAns").slideToggle();
 			score++;
-		$("#Score").html("Score:" + score);
+		$("#Score").html("Correct Answers:" + score + " of 10");
 
 		});
 
@@ -101,7 +102,7 @@ var score = 0;
 		$('#fedCity').on('click', function(){
 			$("#QuesFiveAns").slideToggle();
 			score++;
-		$("#Score").html("Score:" + score); //When user clicks A tell them they got the right answer
+		$("#Score").html("Correct Answers:" + score + " of 10"); //When user clicks A tell them they got the right answer
 			});
 
 		$('#commonsCity').on('click', function(){
@@ -124,7 +125,7 @@ var score = 0;
 		$('#ra').on('click', function(){
 			$("#QuesSixAns").slideToggle();
 			score++;
-		$("#Score").html("Score:" + score);
+		$("#Score").html("Correct Answers:" + score + " of 10");
 			});  
 
 		$('#anti').on('click', function(){
@@ -147,7 +148,7 @@ var score = 0;
 		$('#lEnfant').on('click', function(){
 			$("#QuesSevAnsA").slideToggle();
 			score++; 
-		$("#Score").html("Score:" + score); //When user clicks A tell them they got the right answer
+		$("#Score").html("Correct Answers:" + score + " of 10"); //When user clicks A tell them they got the right answer
 		});
 
 		$('#georgeW').on('click', function(){
@@ -170,7 +171,7 @@ var score = 0;
 		$('#bruce').on('click', function(){
 			 $('#QuesEightAns').slideToggle();
 			 score++;
-			 $("#Score").html("Score:" + score);
+			 $("#Score").html("Correct Answers:" + score + " of 10");
 		});
 
 		$('#strangers').on('click', function(){
@@ -193,7 +194,7 @@ var score = 0;
 		$('#fiveHundred').on('click', function(){
 		 $('#QuesNineAns').slideToggle();
 			 score++; 
-			 $("#Score").html("Score:" + score);
+			 $("#Score").html("Correct Answers:" + score + " of 10");
 		});
 
 		$('#one').on('click', function(){
@@ -215,23 +216,23 @@ var score = 0;
 
 //Question 10
 	function Question_ten(){
-		$('#first').on('click', function(){
-			$('#QuesTenAns').slideToggle();
-			 score++
-			$("#Score").html("Score:" + score);
+		$('#third').on('click', function(){
+			$('#QuesTenAns').slideToggle();//if correct answer clicked
+			 score++                       //add one to score
+			$("#Score").html("Correct Answers:" + score + " of 10"); // alert amount of questions right out of 10
 			});
 			
-		$('#second').on('click', function(){
+		$('#second').on('click', function(){ //if clicked slide down wrong
  			$("QuesTenWrongA").slideToggle();
  		});
 	
 
-		$('#third').on('click', function(){
+		$('#first').on('click', function(){ //if clicked slide down wrong
  			$("#QuesTenWrongB").slideToggle();
  		});
 	
 
-		$('#fifth').on('click', function(){
+		$('#fifth').on('click', function(){ //if clicked slide down wrong 
  			$("#QuesTenWrongD").slideToggle();
 		});
 	}
