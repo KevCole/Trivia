@@ -1,15 +1,21 @@
+
 .container{
-	width: 50%;
-	
-	margin:0 auto;
+	width: 80%;
 	padding: 50px;
+	margin: 0 auto;
+}
+
+button{
+	margin: 0 auto;
+	border: dotted;
+	width: 60%;
 }
 
 p{
-	width: 80%;
+	width: 100%;
 	margin:0 auto;
 	padding: 20px;
-	
+	border:dotted;
 	text-align:center;
 }
 
@@ -17,16 +23,40 @@ p{
 
 .selections {
 
-	margin: auto;
+	margin:0 auto;
 
 }
 
-button {
-	width:700px;
-    margin: 0 auto;
-   
-    border-radius: 10%;
-    padding: 
+label  {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	padding: 10px 20px;
+	font-weight: bold;
+	background-color: #016699;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+	
 
+}
+
+.choose {
+	visibility: hidden;
+}
+
+
+
+span.right {
+	color: green;
+}
+
+span.wrong {
+	color: red;
+}
+
+
+.answer_menu p {
+	display: none;
 }
 

@@ -3,20 +3,29 @@
  <head>
    <title> DC Trivia </title>
    <link rel="stylesheet" type="text/css" href="mystyle.css">
+   <link rel="shortcut icon" href="your_image_path_and_name.ico" />
  </head>
  <body>
    <h2>Washington DC Trivia </h2>
    <h2 id="Timer">Timer</h2>
-   <h2 id ='Score'> Score </h2>
+   <h2 id ='Score'> Score: </h2>
+
     <div class ="container">
     	<div class="Question">
     		<h2>Question 1</h2>
     		<p>Which President made the White House wheelchair accesible?</p>
-    			<div class="selections">
-    				<button id='ted_c'type="button">Theodore Roosevelt </button>
-    				<button id='grover_C'type="button"> Grover Cleveland </button>
-    				<button id="franklin_R" type="button"> Frankin Roosevelt</button>
-    				<button id='john_k'"button"> John Kennedy</button>
+    			<div class="answer_menu">
+    				<label><input class="choose" id='franklinR' type="radio">Frankin Roosevelt</label>
+    					<p id='QuesOneAns'><span class='right'>Correct !! </span>The original builders of the White House didn't consider the possibility of a handicapped president. The White House didn't become wheelchair accessible until Franklin Delano Roosevelt took office in 1933. President Roosevelt suffered paralysis due to polio, so the White House was remodeled to accommodate his wheelchair. Franklin Roosevelt also added a heated indoor swimming pool to help with his therapy.</p>
+
+    				<label><input class="choose" id='Grover' type="radio" value='b'> Grover Cleveland</label>
+    					<p id="QuesOneWrongB"><span class='wrong'>Wrong!!</span> The original builders of the White House didn't consider the possibility of a handicapped president. The White House didn't become wheelchair accessible until Franklin Delano Roosevelt took office in 1933. President Roosevelt suffered paralysis due to polio, so the White House was remodeled to accommodate his wheelchair. Franklin Roosevelt also added a heated indoor swimming pool to help with his therapy.</p>
+
+    				<label><input class="choose" id='Ted_R' type="radio" value='c'> Theodore Roosevelt</label>
+    					<p id="QuesOneWrongC"><span class='wrong'>Wrong!!</span> The original builders of the White House didn't consider the possibility of a handicapped president. The White House didn't become wheelchair accessible until Franklin Delano Roosevelt took office in 1933. President Roosevelt suffered paralysis due to polio, so the White House was remodeled to accommodate his wheelchair. Franklin Roosevelt also added a heated indoor swimming pool to help with his therapy.</p>
+
+    				<label><input class="choose" id='JFK' type="radio" value='d'> John Kennedy</label>
+    					<p id="QuesOneWrongD"><span class='wrong'>Wrong!!</span> The original builders of the White House didn't consider the possibility of a handicapped president. The White House didn't become wheelchair accessible until Franklin Delano Roosevelt took office in 1933. President Roosevelt suffered paralysis due to polio, so the White House was remodeled to accommodate his wheelchair. Franklin Roosevelt also added a heated indoor swimming pool to help with his therapy.</p>
     			</div>
     	</div>
     </div>
@@ -24,12 +33,19 @@
    <div class ="container">
     	<div class="Question">
     		<h2>Question 2</h2>
-    		<p>Which DC neighborhood predates the city?<p>
-    			<div class="selections">
-    				<button id='georgeTown' type="button">Dupont Circle</button>
-    				<button id='dupontCircle' type="button"> Georgrtown</button>
-    				<button id='adamsMorgan' type="button">Adams Morgan</button>
-    				<button id='columbiaHeights' type="button">Columbia Heights</button>
+    		<p>Which DC neighborhood predates the city?</p>
+    			<div class="answer_menu">
+    				<label><input class="choose" id='dupontCircle' type="radio" value='a'>Dupont Circle</label>
+    					<p id="QuesTwoWrongA"><span class='wrong'>Wrong!!</span> Founded in 1751, Georgetown grew into one of the largest cities in Maryland before it became part of the District of Columbia in 1871. Today the upscale neighborhood is home to shops resturants, and cobblestone streets lined with beautiful brownstones</p>
+
+    				<label><input class="choose" id='georgeTown' type="radio" value='b'> Georgetown</label>
+    					<p id='QuesTwoAns'><span class='right'> Correct!! </span> Founded in 1751, Georgetown grew into one of the largest cities in Maryland before it became part of the District of Columbia in 1871. Today the upscale neighborhood is home to shops resturants, and cobblestone streets lined with beautiful brownstones</p>
+
+    				<label><input class="choose" id='adamsMorgan' type="radio" value='c'>Adams Morgan</label>
+    					<p id="QuesTwoWrongC"><span class='wrong'>Wrong!!</span> Founded in 1751, Georgetown grew into one of the largest cities in Maryland before it became part of the District of Columbia in 1871. Today the upscale neighborhood is home to shops resturants, and cobblestone streets lined with beautiful brownstones</p>
+
+    				<label><input class="choose" id='columbiaHeights' type="radio" value='d'>Columbia Heights</label>
+    					<p id="QuesTwoWrongD"><span class='wrong'>Wrong!!</span> Founded in 1751, Georgetown grew into one of the largest cities in Maryland before it became part of the District of Columbia in 1871. Today the upscale neighborhood is home to shops resturants, and cobblestone streets lined with beautiful brownstones</p>
     			</div>
     	</div>
     </div>
@@ -37,25 +53,41 @@
    <div class ="container">
     	<div class="Question">
     		<h2>Question 3</h2>
-    		<p>Which organization doesn't have it's headquarters in Washington DC?<p>
-    			<div class="selections">
-    				<button id='cia' type="button">NASA</button>
-    				<button id='fbi' type="button">FBI</button>
-    				<button id='irs' type="button">IRS</button>
-    				<button id='nasa' type="button">CIA</button>
+    		<p>Which organization doesn't have it's headquarters in Washington DC?</p>
+    			<div class="answer_menu">
+    				<label><input class="choose" id='cia' type="radio">CIA</label>
+    					<p id='QuesThreeAns'><span class='right'> Correct!! </span> The Federal Bureau of investigation(FBI) and the Internal Revenue Service(IRS) are both headquartered in the District, but the Central Intelligence Agency (CIA) is based in the Langley neighborhood of nearby McLean,Virginia.</p>
+
+    				<label><input class="choose" id='fbi' type="radio" >FBI</label>
+    					<p id='QuesThreeWrongB'><span class='wrong'> Wrong!! </span> The Federal Bureau of investigation(FBI) and the Internal Revenue Service(IRS) are both headquartered in the District, but the Central Intelligence Agency (CIA) is based in the Langley neighborhood of nearby McLean,Virginia.</p>
+
+
+    				<label><input class="choose" id='irs' type="radio">IRS</label>
+    					<p id='QuesThreeWrongC'><span class='wrong'> Wrong</span> The Federal Bureau of investigation(FBI) and the Internal Revenue Service(IRS) are both headquartered in the District, but the Central Intelligence Agency (CIA) is based in the Langley neighborhood of nearby McLean,Virginia.</p>
+
+    				<label><input class="choose" id='nasa' type="radio">NASA</label>
+    					<p id='QuesThreeWrongD'><span class='wrong'> Wrong!</span> The Federal Bureau of investigation(FBI) and the Internal Revenue Service(IRS) are both headquartered in the District, but the Central Intelligence Agency (CIA) is based in the Langley neighborhood of nearby McLean,Virginia.</p>
+
     			</div>
     	</div>
-    </div>
+     </div>
 
    <div class ="container">
     	<div class="Question">
     		<h2>Question 4</h2>
-    		<p>Which of the follwing is depicted in Washington National Cathedral?<p>
-    			<div class="selections">
-    				<button id='mickeyMouse' type="button">Mickey Mouse</button>
-    				<button id='darthVader' type="button">Adbominable Snowman</button>
-    				<button id='snowMan' type="button">Darth Vader</button>
-    				<button id='scar' type="button">Scar</button>
+    		<p>Which of the follwing is depicted in Washington National Cathedral?</p>
+    			<div class="answer_menu">
+    				<label><input class="choose" id='mickeyMouse' type="radio">Mickey Mouse</label>
+    					<p id='QuesFourWrongA'><span class='wrong'>Wrong!!</span> In 1980, the National Cathedral and National Geographic World magazine held a contest asking children to suggest new gargoyle designs for the building A nebraska boy suggested the Star Wars villain, and it and several other suggestions were added to the Cathedral</p>
+
+    				<label><input class="choose" id='darthVader' type="radio" >Darth Vader</label>
+    					<p id='QuesFourAns'><span class='correct'>Correct!!</span> In 1980, the National Cathedral and National Geographic World magazine held a contest asking children to suggest new gargoyle designs for the building A nebraska boy suggested the Star Wars villain, and it and several other suggestions were added to the Cathedral</p>
+
+    				<label><input class="choose" id='snowMan' type="radio">Adbominable Snowman</label>
+    					<p id='QuesFourWrongC'><span class='wrong'>Wrong!!</span> In 1980, the National Cathedral and National Geographic World magazine held a contest asking children to suggest new gargoyle designs for the building A nebraska boy suggested the Star Wars villain, and it and several other suggestions were added to the Cathedral</p>
+
+    				<label><input class="choose" id='scar' type="radio">Scar</label>
+    					<p id='QuesFourWrongD'><span class='wrong'>Wrong!!</span> In 1980, the National Cathedral and National Geographic World magazine held a contest asking children to suggest new gargoyle designs for the building A nebraska boy suggested the Star Wars villain, and it and several other suggestions were added to the Cathedral</p>
     			</div>
     	</div>
     </div>
@@ -64,39 +96,61 @@
     	<div class="Question">
     		<h2>Question 5</h2>
     		<p>What was the original name of Washington DC?</p>
-    			<div class="selections">
-    				<button id='commonsCity' type="button">District Commons City</button>
-    				<button id='washingtonCity' type="button">Washington City</button>
-    				<button id='capCity' type="button">Capitol City</button>
-    				<button id='fedCity' type="button">Federal City</button>
+    			<div class="answer_menu">
+    				<label><input class="choose" id='commonsCity' type="radio" value='a'>District Commons</label>
+    				<p id='QuesFiveWrongA'><span class='wrong'>Wrong!!</span> On September 9, 1791, the three commissioners overseeing the capital's construction named the city in honor of President Washington.</p>
+
+    				<label><input class="choose" id='washingtonCity' type="radio" value='b'>Washington City</label>
+    				<p id='QuesFiveWrongB'><span class='wrong'>Wrong!!</span> On September 9, 1791, the three commissioners overseeing the capital's construction named the city in honor of President Washington.</p>
+
+    				<label><input class="choose" id='capCity' type="radio" value='c'>Capitol City</label>
+    				<p id='QuesFiveWrongC'><span class='wrong'>Wrong!!</span> On September 9, 1791, the three commissioners overseeing the capital's construction named the city in honor of President Washington.</p>
+
+    				<label><input class="choose" id='fedCity' type="radio" value='d'> Federal City</label>
+    				<p id='QuesFiveAns'><span class='right'>Correct</span> On September 9, 1791, the three commissioners overseeing the capital's construction named the city in honor of President Washington.</p>
     			</div>
     	</div>
     </div>
 
-   <div class ="container">
+   <div class="container">
     	<div class="Question">
     		<h2>Question 6</h2>
     		<p>At the center of the Washington Monument arises a 600ft Egyptian Statue called an Obelisk.
-    			Obelisks were believed to act as magical protection to monuments.<br> Obelisks symbolized the stability and the creative force of which Egyptian "Sun" God?
-    		</p>
-    			<div class="selections">
-    				<button id='ra' type="button">Ra</button>
-    				<button id='anti' type="button">Anti</button>
-    				<button id='nemty' type="button">Nemty</button>
-    				<button id='shesmu' type="button">Shesmu</button>
+    			Obelisks were believed to act as magical protection to monuments.<br> Obelisks symbolized the stability and the creative force of which Egyptian "Sun" God?</p>
+
+    			<div class="answer_menu">
+    				<label><input class="choose" id='ra' type="radio">Ra</label>
+    				<p id='QuesSixAns'><span class='right'>Correct</span> Egyptians also thought the Sun God Ra existed within the structure.</p>
+
+    				<label><input class="choose" id='anti' type="radio">Anti</label>
+    				<p id='QuesSixWrongB'> <span class='wrong'>Wrong!!</span> Egyptians also thought the Sun God Ra existed within the structure.</p>
+
+    				<label><input class="choose" id='nemty' type="radio">Nemty</label>
+    				<p id='QuesSixWrongC'> <span class='wrong'>Wrong!!</span> Egyptians also thought the Sun God Ra existed within the structure.</p>
+
+
+    				<label><input class="choose" id='shesmu' type="radio">Shesmu</label>
+    				<p id='QuesSixWrongD'> <span class='wrong'>Wrong!!</span> Egyptians also thought the Sun God Ra existed within the structure.</p>
     			</div>
     	</div>
-    </div>
+    </div> 
 
    <div class ="container">
     	<div class="Question"> 
     		<h2>Question 7</h2>
     		<p>Which one of these people designed Washington D.C?</p>
-    			<div class="selections">
-    				<button id='lEnfant' type="button">George Washington</button>
-    				<button id='georgeW' type="button">Charles L'Enfant </button>
-    				<button id='benjamin' type="button"> Benjamin Franklin</button>
-    				<button id='olmstead' type="button"> Fredrick Law Olmsted</button>
+    			<div class="answer_menu">
+    				<label><input class="choose" id='lEnfant' type="radio" value='a'>Charles L'Enfant</label>
+    					<p id='QuesSevAnsA'> <span class='right'>Correct!!</span> Pierre Charles L'Enfant, a French-born American patriot, was the primary architect of the city of Washington, D.C.</p>
+
+    				<label><input class="choose" id='georgeW' type="radio" value='b'>George Washington</label>
+    					<p id='QuesSevWrongB'><span class='wrong'>Wrong!!</span> Pierre Charles L'Enfant, a French-born American patriot, was the primary architect of the city of Washington, D.C.</p> 
+
+    				<label><input class="choose" id='benjamin' type="radio" value='c'> Benjamin Franklin</label>
+    					<p id='QuesSevWrongC'><span class='wrong'>Wrong!!</span> Pierre Charles L'Enfant, a French-born American patriot, was the primary architect of the city of Washington, D.C.</p> 
+
+    				<label><input class="choose" id='olmstead' type="radio">Fredrick Law Olmsted</label>
+    					<p id='QuesSevWrongD'> <span class='wrong'>Wrong!!</span>Pierre Charles L'Enfant, a French-born American patriot, was the primary architect of the city of Washington, D.C.</p> 
     			</div>
     	</div>
     </div>
@@ -105,13 +159,19 @@
     	<div class="Question">
     		<h2>Question 8</h2>
     		<p>Which film is not set in Washington?</p>
-    			<div class="selections">
-    				<button id='strangers' type="button">Strangers on a Train</button>
-    				<button id='bruce' type="button">Traffic</button>
-    				<button id='traffic' type="button">Bruce Almighty</button>
-    				<button id='exorcist' type="button">The Exorcist</button>
-    			</div>
+    			<div class="answer_menu">
+    				<label><input class="choose" id='strangers' type="radio" value='a'>Strangers on a Train</label>
+    					<p id='QuesEightWrongA'><span class='wrong'>Wrong!!</span> All of these movies are set in DC except for "Bruce Almighty which was filmed in Buffalo,NY</p>
 
+    				<label><input class="choose" id='bruce' type="radio" value='b'>Bruce Almighty</label>
+    					<p id='QuesEightAns'><span class='right'>Correct!!</span> All of these movies are set in DC except for "Bruce Almighty which was filmed in Buffalo,NY(2003)</p>
+
+    				<label><input class="choose" id='traffic' type="radio" value='c'>Traffic</label>
+    					<p id='QuesEightWrongC'><span class='wrong'>Wrong!!</span> All of these movies are set in DC except for "Bruce Almighty which was filmed in Buffalo,NY</p>
+
+    				<label><input class="choose" id='exorcist' type="radio" value='d'>The Exorcist</label>
+    					<p id='QuesEightWrongD'><span class='wrong'>Wrong!!</span> All of these movies are set in DC except for "Bruce Almighty which was filmed in Buffalo,NY</p>
+    			</div>
     	</div>
     </div>
 
@@ -119,11 +179,18 @@
     	<div class="Question">
     		<h2>Question 9</h2>
     		<p>Approximately how many people live in D.C.?</p>
-    			<div class="selections">
-    				<button id='one' type="button">One million</button>
-    				<button id='fiveHundred' type="button">500,000</button>
-    				<button id='onePointFive' type="button"> 1.5 million</button>
-    				<button id='twoMillion' type="button">Two million</button>
+    			<div class="answer_menu">
+    				<label><input class="choose" id='one' type="radio" value='a'>One million</label>
+    				<p id='QuesNineWrongA'><span class='wrong'>Wrong!!</span> More than half a million people live in the city, which is considerable given its size.</p>
+
+    				<label><input class="choose" id='fiveHundred' type="radio" value='b'>500,000</label>
+    				<p id='QuesNineAns'><span class='right'>Correct!!</span> More than half a million people live in the city, which is considerable given its size.</p>
+
+    				<label><input class="choose" id='onePointFive' type="radio" value='c'> 1.5 million</label>
+    				<p id='QuesNineWrongC'><span class='wrong'>Wrong!!</span> More than half a million people live in the city, which is considerable given its size.</p>
+
+    				<label><input class="choose" id='twoMillion' type="radio" value='d'>Two million</label>
+    				<p id='QuesNineWrongD'><span class='wrong'>Wrong!!</span> More than half a million people live in the city, which is considerable given its size.</p>
     			</div>
     	</div>
     </div>
@@ -132,41 +199,21 @@
     	<div class="Question">
     		<h2>Question 10</h2>
     		<p>Where does D.C. rank in terms of traffic?</p>
-    			<div class="selections">
-    				<button id='first' type="button">First</button>
-    				<button id='second' type="button">Second</button>
-    				<button id='third' type="button"> Third</button>
-    				<button id='fifth' type="button">Fifth</button>
+    			<div class="answer_menu">
+    				<label><input class="choose" id='first' type="radio">First</label>
+    				<p id='QuesTenWrongA'><span class='wrong'>Wrong!!</span> Washington D.C. is third, behind Los Angeles and San Francisco, among the worst traffic-ridden cities in the U.S. Add to that the difficulties navigating the city and you'll understand why most residents prefer the light-rail system. </p>
+
+    				<label><input class="choose" id='second' type="radio"> Second></label>
+    				<p id='QuesTenWrongB'><span class='wrong'>Wrong!!</span> Washington D.C. is third, behind Los Angeles and San Francisco, among the worst traffic-ridden cities in the U.S. Add to that the difficulties navigating the city and you'll understand why most residents prefer the light-rail system. </p>
+
+    				<label><input class="choose" id='third' type="radio"> Third</label>
+    				<p id='QuesTenAns'> <span class='right'> Correct!!</span> Washington D.C. is third, behind Los Angeles and San Francisco, among the worst traffic-ridden cities in the U.S. Add to that the difficulties navigating the city and you'll understand why most residents prefer the light-rail system. </p>
+
+    				<label><input class="choose" id='fifth' type="radio">Fifth</label>
+    				<p id='QuesTenWrongD'><span class='wrong'>Wrong!!</span> Washington D.C. is third, behind Los Angeles and San Francisco, among the worst traffic-ridden cities in the U.S. Add to that the difficulties navigating the city and you'll understand why most residents prefer the light-rail system. </p>
     			</div>
     	</div>
     </div>
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="myscript.js"></script> 
