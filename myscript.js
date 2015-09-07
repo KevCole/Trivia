@@ -1,7 +1,7 @@
 
 var score = 0;//score starts at 0 for every game
 var name =prompt("What is your name?");//user input for name
-currentScore();//When invoked, will show users name along with score
+currentScore();//When invoked, will show users name along with scor
 
 
 
